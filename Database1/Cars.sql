@@ -6,6 +6,7 @@
     [ModelYear] NCHAR(10) NULL, 
     [DailyPrice] INT NULL, 
     [Description] VARCHAR(50) NULL, 
+    [CarName] VARCHAR(50) NULL, 
     CONSTRAINT [FK_Cars_Colors] FOREIGN KEY ([ColorId]) REFERENCES [Colors]([ColorId]), 
     CONSTRAINT [FK_Cars_Brands] FOREIGN KEY ([BrandId]) REFERENCES [Brands]([BrandId]) 
 )
